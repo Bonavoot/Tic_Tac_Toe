@@ -1,0 +1,99 @@
+:root {
+    font-family: 'Indie Flower', cursive;
+    background-color: #121213;
+}
+
+body {
+    height: 95vh;
+    width: auto;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 20% 60%;
+
+
+}
+
+.title {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+}
+
+/* Board styling */
+
+.board {
+    display: inline-grid;
+    grid-template-columns: 10rem 10rem 10rem;
+    grid-template-rows: 10rem 10rem 10rem;
+    border: rgb(129, 129, 129) solid 2px;
+
+}
+
+.board>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid 3px;
+    font-size: 8rem;
+    color: white;
+}
+
+.board>div:nth-of-type(even) {
+    background-color: rgb(129, 129, 129);
+}
+
+.board>div:nth-of-type(odd) {
+    background-color: rgb(39, 39, 39);
+}
+
+/* Winner declaration */
+
+#winner {
+
+    font-size: 2rem;
+    color: green;
+    justify-self: end;
+}
+
+
+/* Tile border removal */
+
+div[class="0"] {
+    border-right: none;
+    border-bottom: none;
+}
+
+div[class="1"] {
+    border-right: none;
+    border-bottom: none;
+}
+
+
+div[class="3"] {
+    border-right: none;
+    border-bottom: none;
+}
+
+div[class="2"] {
+
+    border-bottom: none;
+}
+
+div[class="4"] {
+    border-right: none;
+    border-bottom: none;
+}
+
+div[class="5"] {
+
+    border-bottom: none;
+}
+
+div[class="6"] {
+    border-right: none;
+}
+
+div[class="7"] {
+    border-right: none;
+}
