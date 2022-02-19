@@ -92,7 +92,7 @@ let Players = () => {
                 
         } 
         else if (counter == 9 ) {
-            return console.log(draw);
+            return document.getElementById('winner').textContent = draw;
         }
     }
 }   
